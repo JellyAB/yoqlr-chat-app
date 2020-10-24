@@ -1,17 +1,12 @@
-name := """yoqlr"""
-organization := "odettes"
+name := """play-websockets-1"""
+organization := "com.alvinalexander"
 
-version := "1.0-SNAPSHOT"
+version := "0.1"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.13.3"
+scalaVersion := "2.12.11"
 
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test
 
-// Adds additional packages into Twirl
-//TwirlKeys.templateImports += "odettes.controllers._"
-
-// Adds additional packages into conf/routes
-// play.sbt.routes.RoutesKeys.routesImport += "odettes.binders._"
